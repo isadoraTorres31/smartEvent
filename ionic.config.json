@@ -1,0 +1,7 @@
+{
+  "name": "smartEvent",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
