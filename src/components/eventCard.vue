@@ -2,7 +2,7 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title>{{ evento.nome }}</ion-card-title>
-    </ion-card-header>
+    </ion-card-header> <!-- div dentro da div, cabeçalho soft-->
 
     <ion-button @click="$emit('favoritar', evento)">
       Favoritar

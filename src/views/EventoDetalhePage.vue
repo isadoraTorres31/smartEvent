@@ -27,6 +27,8 @@
   </ion-page>
 </template>
 
+<!-- mema pora do home-->
+
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
