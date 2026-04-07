@@ -16,7 +16,7 @@
 
       <div id="container">
         <div v-if="favoritos.length === 0">
-          Nenhum favorito ainda 😢
+          Nenhum favorito aindaaaa
         </div>
         <ion-list v-else>
           <ion-item v-for="evento in favoritos" :key="evento.id">
