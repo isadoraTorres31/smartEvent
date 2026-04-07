@@ -14,8 +14,9 @@
       </ion-header>
 
       <ion-list>
-        <ion-item v-for="evento in eventos" :key="evento.id" :router-link="`/eventos/${evento.id}`" detail>
+        <ion-item v-for="evento in eventos" :key="evento.id">
           {{ evento.nome }}
+          <ion-button slot="end" router-link="`/eventos/${evento.id}`">Ver Detalhes</ion-button>
         </ion-item>
       </ion-list>
     </ion-content>
@@ -23,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 import { useEventos } from '@/composables/useEventos'
 
 const { eventos } = useEventos()

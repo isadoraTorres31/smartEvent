@@ -2,6 +2,8 @@
   <ion-page>
     <ion-content class="ion-padding">
       <h1>SmartEvent</h1>
+      <ion-button router-link="/favoritos">Favoritos</ion-button>
+      <ion-button router-link="/perfil">Perfil</ion-button>
       <ion-button router-link="/eventos"> Ver Eventos </ion-button>
       <ion-list>
   <ion-item v-for="evento in eventos" :key="evento.id" :router-link="`/eventos/${evento.id}`">
