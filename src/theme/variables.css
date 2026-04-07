@@ -2,5 +2,15 @@
 http://ionicframework.com/docs/theming/ */
 
 :root {
-  --ion-color-primary: #ff4d6d;
+  --ion-color-primary: #4dbeff;
+}
+.tit {
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ion-padding {
+  padding: 20px;
+  text-align: center;
 }
