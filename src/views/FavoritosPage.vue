@@ -28,6 +28,7 @@
   </ion-page>
 </template>
 
+<!-- Importação da função computed do Vue para criar propriedades computadas reativas var de função fixa só emite um valor -->
 <script setup lang="ts">
 import { computed } from 'vue'
 import { IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
