@@ -2,6 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
         <ion-title>Eventos</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -16,7 +17,9 @@
       <ion-list>
         <ion-item v-for="evento in eventos" :key="evento.id">
           {{ evento.nome }}
-          <ion-button slot="end" router-link="`/eventos/${evento.id}`">Ver Detalhes</ion-button>
+          <router-link :to="`/eventos/${evento.id}`">
+            <ion-button slot="end">Ver Detalhes</ion-button>
+          </router-link>
         </ion-item>
       </ion-list>
     </ion-content>
@@ -24,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+import { IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 import { useEventos } from '@/composables/useEventos'
 
 const { eventos } = useEventos()

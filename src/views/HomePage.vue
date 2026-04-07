@@ -1,5 +1,11 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content class="ion-padding">
       <h1>SmartEvent</h1>
       <ion-button router-link="/favoritos">Favoritos</ion-button>
@@ -15,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonButton, IonContent, IonItem, IonList, IonPage } from '@ionic/vue'
+import { IonBackButton, IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 import { useEventos } from '@/composables/useEventos'
 
 const { eventos } = useEventos()

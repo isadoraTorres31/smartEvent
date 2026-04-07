@@ -2,6 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
         <ion-title>Perfil</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -24,7 +25,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+import { IonBackButton, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 
 const nome = ref('')
 

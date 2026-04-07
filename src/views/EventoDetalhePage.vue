@@ -2,6 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
         <ion-title>Detalhes do Evento</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -30,7 +31,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+import { IonBackButton, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 import { useEventos } from '@/composables/useEventos'
 
 const route = useRoute()

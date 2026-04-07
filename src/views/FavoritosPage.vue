@@ -2,6 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
         <ion-title>Favoritos</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -29,7 +30,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
+import { IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue'
 import { useEventos } from '@/composables/useEventos'
 
 const { eventos } = useEventos()
